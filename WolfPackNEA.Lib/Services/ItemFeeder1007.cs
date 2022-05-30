@@ -6,8 +6,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Abstractions;
 using System.Threading.Tasks;
+using WolfPack.Lib.Services;
 
-namespace WolfPack.Lib.Services
+namespace WolfPackNEA.Lib.Services
 {
     public class ItemFeeder1007 : IItemFeeder
     {

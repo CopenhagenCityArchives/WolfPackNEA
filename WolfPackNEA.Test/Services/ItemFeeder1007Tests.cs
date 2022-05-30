@@ -6,6 +6,7 @@ using System.IO.Abstractions.TestingHelpers;
 using System.Linq;
 using WolfPack.Lib.Services;
 using WolfPackNEA;
+using WolfPackNEA.Lib.Services;
 
 namespace WolfpackTest
 {
@@ -44,7 +45,7 @@ namespace WolfpackTest
             av.Setup(av => av.GetAbsolutePath(fileName)).Returns(fileName);
             av.Setup(av => av.FileIndexPath).Returns(@"\C\AVID.KSA.1\AVID.KSA.1.1\fileIndex.xml");
 
-            var itemFeeder = new ItemFeeder1007(av.Object, _fileSystem);
+            var itemFeeder = new WolfPackNEA.Lib.Services.ItemFeeder1007(av.Object, _fileSystem);
             var items = itemFeeder.GetItems().ToList();
 
             Assert.AreEqual(3, items.Count);

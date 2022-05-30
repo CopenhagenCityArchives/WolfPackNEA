@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using WolfPack.Lib.Helpers;
 using WolfPack.Lib.Models;
 using WolfPack.Lib.Services;
+using WolfPackNEA.Lib.Services;
 
 namespace WolfPackNEA.Lib
 {
