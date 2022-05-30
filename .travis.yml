@@ -1,0 +1,23 @@
+os: linux
+dist: xenial
+language: csharp
+solution: WolfPack.sln
+mono: none
+dotnet: 5.0.401
+git:
+  depth: false
+before_script:
+ - dotnet test
+script:
+ - dotnet publish WolfPack.CLI -c Release
+deploy:
+  provider: releases
+  token: $GH_TOKEN
+  file:
+    - "./WolfPack.CLI/bin/Release/net5.0/win-x64/publish/WolfPack.CLI.exe"
+    - "./WolfPack.CLI/bin/Release/net5.0/win-x64/publish/log4net.config"
+  cleanup: false
+  overwrite: true
+  edge: true
+  on:
+    tags: true

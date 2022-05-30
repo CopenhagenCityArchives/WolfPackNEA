@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<Import Project="..\build.props" Condition="Exists('..\build.props')" />
+ <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'PublishLocally' ">
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishTrimmed>true</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta2.21617.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WolfPack.Lib\WolfPack.Lib.csproj" />
+    <ProjectReference Include="..\WolfPackNEA.Lib\WolfPackNEA.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="CopyExecutable" AfterTargets="Publish" Condition=" '$(Configuration)' == 'PublishLocally' ">
+    <Message Text="Copying" Importance="High" />
+    
+    <PropertyGroup>
+      <CopyToDir>$(LocalPublishDestination)WolfPack.CLI\WolfPack.CLI-$([System.DateTime]::Now.ToString(yyyy-MM-ddTHHmmss))</CopyToDir>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <File Include="$(TargetDir)/publish/*.*"></File>
+      <File Include="$(TargetDir)/log4net.config"></File>
+    </ItemGroup>
+
+    <Copy SourceFiles="@(File)" DestinationFolder="$(CopyToDir)" />
+
+    <Message Text="Done copying $(CopyToDir)" Importance="High" />
+  </Target>
+
+</Project>

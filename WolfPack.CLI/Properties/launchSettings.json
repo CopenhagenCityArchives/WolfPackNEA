@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WolfPack.CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "pack d:\\AVID.SA.18000 d:\\wolfpack_temp2 d:\\wolfpack_destination2 d:\\wolf-pass.csv"
+    }
+  }
+}

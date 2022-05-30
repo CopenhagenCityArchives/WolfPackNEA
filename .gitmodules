@@ -1,0 +1,4 @@
+[submodule "nealib"]
+	path = nealib
+	url = https://github.com/copenhagencityarchives/nealib.git
+	branch = master
