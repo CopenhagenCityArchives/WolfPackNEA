@@ -38,7 +38,7 @@
     <Message Text="Copying" Importance="High" />
     
     <PropertyGroup>
-      <CopyToDir>$(LocalPublishDestination)WolfPack.CLI\WolfPack.CLI-$([System.DateTime]::Now.ToString(yyyy-MM-ddTHHmmss))</CopyToDir>
+      <CopyToDir>$(LocalPublishDestination)WolfPackNEA.CLI\WolfPackNEA.CLI-$([System.DateTime]::Now.ToString(yyyy-MM-ddTHHmmss))</CopyToDir>
     </PropertyGroup>
     
     <ItemGroup>

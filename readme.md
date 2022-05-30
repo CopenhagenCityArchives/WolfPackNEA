@@ -107,4 +107,4 @@ Deploy the application to a self contained single file using this command:
 
 Deploy to local environment using this command (deploy location are set using build.props, see build.props-example for an example):
 
-``dotnet publish WolfPack.CLI -c PublishLocally``
+``dotnet publish WolfPackNEA.CLI -c PublishLocally``
