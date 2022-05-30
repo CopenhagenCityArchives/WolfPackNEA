@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPack.Lib", "WolfPack.Lib\WolfPack.Lib.csproj", "{DE05B8C3-CDE0-463B-91C5-7F6B5937A519}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPackTest", "WolfpackTest\WolfPackTest.csproj", "{F2C64223-43D0-40CF-B62D-85A2B23EC18F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPackNEA.CLI", "WolfPack.CLI\WolfPackNEA.CLI.csproj", "{332E6370-0571-4E04-8EF7-387B1A76DFAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPackNEA.CLI", "WolfPackNEA.CLI\WolfPackNEA.CLI.csproj", "{332E6370-0571-4E04-8EF7-387B1A76DFAB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nealib", "nealib\nealib\nealib.csproj", "{B8CE9512-750D-4125-B15E-EF4458A19DA7}"
 EndProject

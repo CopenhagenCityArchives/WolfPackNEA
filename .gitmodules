@@ -2,3 +2,7 @@
 	path = nealib
 	url = https://github.com/copenhagencityarchives/nealib.git
 	branch = master
+[submodule "wolfpack"]
+	path = WolfPack
+	url = https://github.com/copenhagencityarchives/WolfPack.git
+	branch = master
