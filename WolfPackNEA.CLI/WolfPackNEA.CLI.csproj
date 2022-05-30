@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WolfPack.Lib\WolfPack.Lib.csproj" />
     <ProjectReference Include="..\WolfPackNEA.Lib\WolfPackNEA.Lib.csproj" />
+    <ProjectReference Include="..\WolfPack\WolfPack.Lib\WolfPack.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

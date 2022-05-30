@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPack.Lib", "WolfPack.Lib\WolfPack.Lib.csproj", "{DE05B8C3-CDE0-463B-91C5-7F6B5937A519}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPackNEA.CLI", "WolfPackNEA.CLI\WolfPackNEA.CLI.csproj", "{332E6370-0571-4E04-8EF7-387B1A76DFAB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nealib", "nealib\nealib\nealib.csproj", "{B8CE9512-750D-4125-B15E-EF4458A19DA7}"
@@ -16,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPackNEA.Lib", "WolfPackNEA.Lib\WolfPackNEA.Lib.csproj", "{A9184AE7-4E58-43F1-B0DD-57DFEA4BAA8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolfPackNEATest", "WolfPackNEATest\WolfPackNEATest.csproj", "{45CAA900-8499-4905-8853-5BE4A3BE7A7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPackNEATest", "WolfPackNEATest\WolfPackNEATest.csproj", "{45CAA900-8499-4905-8853-5BE4A3BE7A7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WolfPack.Lib", "WolfPack\WolfPack.Lib\WolfPack.Lib.csproj", "{D439BAD7-2CEF-4EC8-8159-99AA1484CE13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,14 +24,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DE05B8C3-CDE0-463B-91C5-7F6B5937A519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE05B8C3-CDE0-463B-91C5-7F6B5937A519}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE05B8C3-CDE0-463B-91C5-7F6B5937A519}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE05B8C3-CDE0-463B-91C5-7F6B5937A519}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2C64223-43D0-40CF-B62D-85A2B23EC18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2C64223-43D0-40CF-B62D-85A2B23EC18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2C64223-43D0-40CF-B62D-85A2B23EC18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2C64223-43D0-40CF-B62D-85A2B23EC18F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{332E6370-0571-4E04-8EF7-387B1A76DFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{332E6370-0571-4E04-8EF7-387B1A76DFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{332E6370-0571-4E04-8EF7-387B1A76DFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,6 +40,10 @@ Global
 		{45CAA900-8499-4905-8853-5BE4A3BE7A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CAA900-8499-4905-8853-5BE4A3BE7A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45CAA900-8499-4905-8853-5BE4A3BE7A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D439BAD7-2CEF-4EC8-8159-99AA1484CE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D439BAD7-2CEF-4EC8-8159-99AA1484CE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D439BAD7-2CEF-4EC8-8159-99AA1484CE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D439BAD7-2CEF-4EC8-8159-99AA1484CE13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

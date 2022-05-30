@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO.Abstractions.TestingHelpers;
 using System.Linq;
 using WolfPack.Lib.Services;
+using WolfPackNEA;
 
 namespace WolfpackTest
 {

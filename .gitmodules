@@ -5,4 +5,4 @@
 [submodule "wolfpack"]
 	path = WolfPack
 	url = https://github.com/copenhagencityarchives/WolfPack.git
-	branch = master
+	branch = feature-events

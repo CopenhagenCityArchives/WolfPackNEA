@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.2.1" />
     <PackageReference Include="GitVersion.MsBuild" Version="5.10.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -14,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WolfPack.Lib\WolfPack.Lib.csproj" />
+    <ProjectReference Include="..\nealib\nealib\nealib.csproj" />
+    <ProjectReference Include="..\WolfPack\WolfPack.Lib\WolfPack.Lib.csproj" />
   </ItemGroup>
 
 </Project>
