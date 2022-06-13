@@ -27,7 +27,7 @@ namespace WolfPackNEA.Lib
 
         public void Pack()
         {
-            var logName = $"WolfPack -{ DateTime.Now:yyyy-MM-dd_HH-mm-ss}.log";
+            var logName = $"WolfPack-{ DateTime.Now:yyyy-MM-dd_HH-mm-ss}.log";
             var logPath = Path.Combine(Settings.Destination, logName);
             Initconfig(logPath);
 
